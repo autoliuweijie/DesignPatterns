@@ -31,7 +31,7 @@ private:
 
 
 int main(int argc, const char * argv[]) {
-    Circle* new_circle = new Circle();
+    VirtualShape* new_circle = new Circle();
     new_circle->display();
     return 0;
 }
