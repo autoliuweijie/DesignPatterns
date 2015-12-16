@@ -7,10 +7,13 @@
 //
 
 #include <iostream>
+#include "Facade.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
+    FlashLight* flashlight = new FlashLight();
+    flashlight->close();
     return 0;
 }
 
