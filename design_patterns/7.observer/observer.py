@@ -120,7 +120,3 @@ if __name__ == "__main__":
     clock_timer.notify()
     digtal_clock.draw()
     analogy_clock.draw()
-
-    
-
-
