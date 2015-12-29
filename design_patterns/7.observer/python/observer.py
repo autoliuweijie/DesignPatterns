@@ -89,7 +89,7 @@ class AnalogyClock(Observer):
         self._minute = subject.get_minute()
         self._second = subject.get_second()
 
-    def update(self, subject):
+    def update(self, subpreject):
         self._hour = subject.get_hour()
         self._minute = subject.get_minute()
         self._second = subject.get_second()
