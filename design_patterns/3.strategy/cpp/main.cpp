@@ -1,7 +1,10 @@
 /*
-    For facade pattern.
+    Example of Strategy pattern.
     @author: Liu Weijie
-    @date: 2015-12-16
+    @data: 2015-12-17
+
+    需求:
+        设计一个订单类, 既可以计算美国税或加拿大税, 也可以用微信或者阿里支付.
 */
 #include <iostream>
 
