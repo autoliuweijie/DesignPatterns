@@ -1,4 +1,4 @@
-Hello design_patterns
+<Design Patterns>
 ===
 
 Example of design patterns in C++ and python!
