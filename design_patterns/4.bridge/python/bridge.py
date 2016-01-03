@@ -1,5 +1,12 @@
 # coding: utf-8
+"""
+    Example of Strategy pattern.
+    @author: Liu Weijie
+    @data: 2015-12-17
 
+    需求:
+        设计一组容器：容器包括堆栈、队列. 这些容器的实现可能是数组，也可能是链表;
+"""
 
 class ContainerImp(object):
     ''' Implementor '''

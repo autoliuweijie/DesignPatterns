@@ -1,7 +1,10 @@
 /*
-    For facade pattern.
+    Example of Adapter pattern.
     @author: Liu Weijie
-    @date: 2015-12-16
+    @data: 2015-12-16
+
+    需求:
+        别人已经编写好一个XXCirecle类可以满足我们的需求, 但是这个类的接口不符合Shape类的要求.
 */
 #include <iostream>
 

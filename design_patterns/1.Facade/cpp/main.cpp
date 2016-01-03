@@ -1,11 +1,14 @@
 /*
-    For facade pattern.
+    Example of  Facade pattern.
     @author: Liu Weijie
-    @date: 2015-12-16
+    @data: 2015-12-15
+
+    需求:
+        设计一个傻瓜相机, 只要选好拍照模式(白天模式或夜间模式), 即可自动完成各参数的设定.
 */
 #include <iostream>
 
-// 闪光灯
+// SubSystem1
 class FlashLight{
 public:
     FlashLight(bool is_open_in=false){
@@ -24,7 +27,7 @@ private:
     bool is_open;
 };
 
-// 快门
+// SubSystem2
 class Shutter{
 public:
     void action(){
@@ -32,7 +35,7 @@ public:
     }
 };
 
-// 焦距
+// SubSystem3
 class Focus{
 public:
     void set_focus_value(int value_in){
@@ -44,7 +47,7 @@ private:
 };
 
 
-// 光圈
+// SubSystem4
 class Aperture
 {
 public:
@@ -60,7 +63,7 @@ private:
     int aperture_value;
 };
 
-// 相机 Facade类
+// Facade
 class Camera{
 
 public:

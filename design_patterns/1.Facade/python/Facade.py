@@ -1,8 +1,16 @@
 # coding: utf-8
+"""
+    Example of  Facade pattern.
+    @author: Liu Weijie
+    @data: 2015-12-15
+
+    需求:
+        设计一个傻瓜相机, 只要选好拍照模式(白天模式或夜间模式), 即可自动完成各参数的设定.
+"""
 
 
 class FlashLight(object):
-    ''' 闪光灯 '''
+    """ SubSystem1 """
 
     def __init__(self, is_open_in=False):
         self.is_open = is_open_in
@@ -15,14 +23,14 @@ class FlashLight(object):
 
 
 class Shutter(object):
-    ''' 快门 '''
+    """ SubSystem2 """
 
     def action(self):
         print "action!"
 
 
 class Focus(object):
-    ''' 焦距 '''
+    """ SubSystem3 """
 
     def __init__(self, value_in=0):
         self.focue_value = value_in
@@ -32,7 +40,7 @@ class Focus(object):
 
 
 class Aperture(object):
-    ''' 光圈 '''
+    """ SubSystem4 """
 
     def __init__(self, value_in=0):
         self.aperture_value = value_in
@@ -42,7 +50,7 @@ class Aperture(object):
 
 
 class Camera(object):
-    ''' 相机 就是Facade类 '''
+    """ Facade """
 
     def __init__(self):
         self.flash_light = FlashLight()
