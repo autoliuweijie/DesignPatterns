@@ -38,3 +38,7 @@ nosetests.xml
 .pydevproject
 
 *.idea/
+
+.idea/
+.DS_Store/
+.env/*
